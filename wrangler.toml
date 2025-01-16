@@ -2,10 +2,6 @@ name = "leptos-worker"            # <- name of your worker on Cloudflare
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-09-19"
 
-[assets]
-binding = "ASSETS"
-directory = "./public/"
-
 # [[d1_databases]]
 # binding = "DB"                                       # i.e. available in your Worker on env.DB
 # database_name = "<database name>"
@@ -13,4 +9,7 @@ directory = "./public/"
 # migrations_table = "d1_migrations"
 
 [build]
-command = "cargo leptos build --release && LEPTOS_OUTPUT_NAME=start-axum worker-build --release --features ssr"
+command = "cargo leptos build --release && LEPTOS_OUTPUT_NAME=leptos_worker worker-build --release --features ssr"
+
+[assets]
+directory = "./target/site"
