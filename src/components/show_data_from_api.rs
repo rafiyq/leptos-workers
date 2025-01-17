@@ -1,6 +1,6 @@
 use leptos::prelude::*;
 
-use crate::api::say_hello::say_hello;
+use crate::components::say_hello::say_hello;
 
 #[component]
 pub fn ShowDataFromApi() -> impl IntoView {
