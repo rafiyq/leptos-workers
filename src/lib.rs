@@ -12,6 +12,7 @@ pub fn register_server_functions() {
 
     // Add all of your server functions here
     register_explicit::<components::show_data_from_api::SayHello>();
+    register_explicit::<components::d1::GetPost>();
 }
 
 #[cfg(feature = "ssr")]

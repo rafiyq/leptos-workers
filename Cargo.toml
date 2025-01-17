@@ -16,6 +16,7 @@ leptos = "0.7"
 leptos_axum = { version = "0.7", default-features = false, features = ["wasm"], optional = true }
 leptos_meta = "0.7"
 leptos_router = "0.7"
+serde = { version = "1.0", features = ["derive"] }
 tower-service = "0.3"
 wasm-bindgen = "=0.2.100"
 worker = { version = "0.5", features = ["http", "axum", "d1"], optional = true }
