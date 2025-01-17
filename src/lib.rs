@@ -11,8 +11,7 @@ pub fn register_server_functions() {
     use leptos::server_fn::axum::register_explicit;
 
     // Add all of your server functions here
-
-    register_explicit::<components::say_hello::SayHello>();
+    register_explicit::<components::show_data_from_api::SayHello>();
 }
 
 #[cfg(feature = "ssr")]
